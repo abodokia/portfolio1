@@ -1,0 +1,223 @@
+
+@font-face {
+    font-family: 'mansalva';
+    src: url(Fonts/Mansalva-Regular.ttf);
+  }
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* nav */
+
+.navbar {
+ 
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    
+    z-index: 9999; /* ძალიან მაღალი მნიშვნელობა */
+  }
+  
+  
+  .nav-list {
+  display: flex;
+  position: fixed;
+   /* ან შიგნით განლაგება */
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  background-color: white;
+  }
+  
+  .nav-list li {
+  margin: 0;
+  }
+  
+  .nav-list a {
+  
+  display: block;
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .nav-list a:hover {
+  color: #FE5C2B;
+  transform: scale(1.1); /* ოდნავ გადიდება */
+      
+  }
+  
+  
+  /* პატარა ეკრანების მორგება */
+  @media (max-width: 768px) {
+    .nav-list {
+      
+    }
+  
+    .nav-list a {
+      padding: 10px;
+      font-size: 16px;
+    }
+  
+    .content {
+      padding: 70px 10px 10px; /* დამატებითი პადინგი, საჭიროების შემთხვევაში */
+    }
+  }
+  
+  
+      /* */
+  
+
+
+
+.project1{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 სვეტი, თითო თითოეული სვეტი 50% */
+    
+    max-width: 100%;
+   
+}
+
+.project1 img{
+    width: 202%;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 0;
+    margin-right: 0;
+    
+
+}
+
+
+
+
+
+
+   /* საკონტაქტო კონტეინერი */
+   .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    line-height: 60px;
+    margin-top: 0%;
+    width: 100%;
+  }
+  
+  .contact-container h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+
+  }
+  
+  .contact-container p {
+    margin: 5px 0;
+    font-size: 4vw;
+    font-family: 'mansalva';
+    margin-bottom: 150px;
+    color: #FE5C2B;
+    margin-top: 140px;
+    
+  }
+  
+  .contact-container a {
+    
+    text-decoration: none;
+    color: #1b1a1a;
+    
+    margin: 7px 0;
+    margin-top: 10px;
+    font-size: 5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  
+  .contact-container a:hover {
+    color: #FE5C2B;
+  }
+  
+
+
+
+  h4 {
+    margin: 0;
+    padding: 15px; /* Optional padding for better visibility */
+    background-color: white; /* Background color of the element */
+    color: #242424; /* Text color */
+    font-size: 1.5vw; /* Font size that scales with viewport width */
+    font-family: Arial, Helvetica, sans-serif; /* Font family */
+    position: fixed; /* Fixes the element to a specific position */
+    bottom: 20px; /* Aligns the element to the bottom of the viewport */
+    right: 0; /* Aligns the element to the right of the viewport */
+    z-index: 9999; /* Ensures the element is above other content */
+    /* Optional: border-radius for rounded corners */
+    font-weight: 1;
+    margin-right: 2.5%;
+   
+}
+.footer-photo {
+    max-width: 2800px; /* adjust size as needed */
+    height: auto;
+    
+    margin-top: 20%;
+  }
+
+
+  /* მობილური ეკრანებისთვის */
+@media (max-width: 768px) {
+    h4{
+        margin-bottom: -2%;
+        font-size:2.5vw;
+    }
+   
+    
+    .contact-container {
+      text-align: center;
+      padding: 10px;
+      line-height: 30px;
+      margin-top: -150px;
+    }
+    .contact-container p{
+        
+        font-size: 10vw;
+        margin-top: 200px;
+    }
+    .contact-container a{
+        font-size: 10vw;
+        
+    }
+  
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-photo {
+      max-width: 100px; /* adjust size for smaller screens */
+    }
+    .footer-photo {
+        display: none;
+    }
+.project1{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 სვეტი, თითო თითოეული სვეტი 50% */
+    
+    max-width: 100%;
+   
+}
+
+
+  }
+
+
+  .nav-list a.active {
+    color:  #FE5C2B;; /* ფერის შეცვლა, მაგალითად, წითელი */
+   
+    
+  }
