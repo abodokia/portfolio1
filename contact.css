@@ -87,7 +87,7 @@ body{
     flex-direction: column;
     align-items: flex-start;
     margin-left: 20px;
-    line-height: 70px;
+    
     margin-top: 0%;
     width: 100%;
   }
@@ -105,6 +105,8 @@ body{
     margin-bottom: 150px;
     color: #FE5C2B;
     margin-top: 140px;
+    line-height: 20px;
+    line-clamp: 50px;
     
   }
   
