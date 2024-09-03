@@ -1,20 +1,17 @@
+
 @font-face {
     font-family: 'mansalva';
     src: url(Fonts/Mansalva-Regular.ttf);
-}
-
+  }
 body{
     margin: 0;
     padding: 0;
-    color: #1b1a1a;
 }
 
+/* nav */
 
-/* ნავბარი*/
-/* ნავიგაციის სტილი */
-
-  .navbar {
-   
+.navbar {
+ 
     top: 0;
     left: 0;
     width: 100%;
@@ -23,8 +20,8 @@ body{
     z-index: 9999; /* ძალიან მაღალი მნიშვნელობა */
   }
   
-
-.nav-list {
+  
+  .nav-list {
   display: flex;
   position: fixed;
    /* ან შიგნით განლაგება */
@@ -32,13 +29,13 @@ body{
   padding: 10px 0;
   margin: 0;
   background-color: white;
-}
-
-.nav-list li {
+  }
+  
+  .nav-list li {
   margin: 0;
-}
-
-.nav-list a {
+  }
+  
+  .nav-list a {
   
   display: block;
   padding: 10px 20px;
@@ -47,26 +44,19 @@ body{
   font-size: 22px;
   font-family: Arial, Helvetica, sans-serif;
   transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.nav-list a:hover {
+  }
+  
+  .nav-list a:hover {
   color: #FE5C2B;
   transform: scale(1.1); /* ოდნავ გადიდება */
       
-}
-
- 
+  }
+  
+  
   /* პატარა ეკრანების მორგება */
   @media (max-width: 768px) {
     .nav-list {
-     
       
-      
-      
-      
-      
-      
-     
     }
   
     .nav-list a {
@@ -78,129 +68,44 @@ body{
       padding: 70px 10px 10px; /* დამატებითი პადინგი, საჭიროების შემთხვევაში */
     }
   }
+  
+  
+      /* */
+  
 
 
-/*ფოტო დასაწყისი*/
-.photo-container {
+
+.project1{
     display: grid;
     grid-template-columns: 1fr 1fr; /* 2 სვეტი, თითო თითოეული სვეტი 50% */
-    gap: 20px; /* ფოტოების შორის მანძილი */
-    max-width: 100%
-  }
-  
-  .photo {
-    width: 100%;
+    
+    max-width: 100%;
+   
+}
+
+.project1 img{
+    width: 202%;
     height: auto;
-  }
-  
-  .left-photo {
-    margin-top: 10%;
-    margin-left:-8%;
-    width: 100%;
-    padding: 0 20px; /* დაშორება კიდეებიდან */
-   
-    
-    
-  }
-  
-  .right-photo {
-    margin-top: 15%;
-    width:130%;
-    padding: 0 20px; /* დაშორება კიდეებიდან */
-    
-  }
-
-  /*ტექსტი დასაწყისი */
-
-  .text-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 სვეტი, თითო თითოეული სვეტი 50% */
-    gap: 20px; /* ფოტოების შორის მანძილი */
-    margin-left: 20px;
-    margin-top: -130px;
-    line-height: 5px;
-
-  }
-  .text-container h1{
-    font-size: 4vw;
-    font-family: 'mansalva';
-    font-weight: 1;
-
-  }
-  .text-container p{
-    font-size: 6vw;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-  }
-
-  @media (max-width: 768px) {
-    
-    .left-photo {
-     width: 210%;
-     margin-top: 100%;
-     margin-left: -10%;
-  }
-  .right-photo{
-    display: none;
-  }
-  .text-container{
+    margin-top: 50px;
     margin-left: 0;
+    margin-right: 0;
     
-    margin-top: -5%;
-  }
-  .text-container h1{
-    margin-top: -550px;
-    font-size: 5vw;
-    
-  }
-  .text-container p{
-    font-size: 9vw;
-    
-   
-  }
+
 }
 
 
 
-  /* სქილების ფოტო, ქვემოთ */
-
-  .photo-container2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* ვერტიკალური ცენტრი */
-    align-items: center; /* ჰორიზონტალური ცენტრი */
-   
-   
-   
-  }
-  .photo-container2 img{
-    width: 205%;
-    height: auto;
-    margin-left: -105%;
-    margin-top: 250px;
-    object-fit: cover; 
-    padding-right: 0px;
-    
-  }
-
-  @media (max-width: 768px) {
-    .photo-container2 img{
-        width:310%;
-        margin-left: -200%;
-        margin-top: 20px;
-        margin-right: 10%;
-        }
-  }
 
 
-  /* საკონტაქტო კონტეინერი */
-.contact-container {
+
+   /* საკონტაქტო კონტეინერი */
+   .contact-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 20px;
     line-height: 60px;
-    margin-top: 5%;
+    margin-top: 0%;
     width: 100%;
   }
   
@@ -214,8 +119,9 @@ body{
     margin: 5px 0;
     font-size: 4vw;
     font-family: 'mansalva';
-    margin-bottom: 345px;
+    margin-bottom: 150px;
     color: #FE5C2B;
+    margin-top: 140px;
     
   }
   
@@ -223,7 +129,9 @@ body{
     
     text-decoration: none;
     color: #1b1a1a;
+    
     margin: 7px 0;
+    margin-top: 10px;
     font-size: 5vw;
     font-family: Arial, Helvetica, sans-serif;
     
@@ -259,6 +167,7 @@ body{
     margin-top: 20%;
   }
 
+
   /* მობილური ეკრანებისთვის */
 @media (max-width: 768px) {
     h4{
@@ -271,13 +180,16 @@ body{
       text-align: center;
       padding: 10px;
       line-height: 30px;
+      margin-top: -150px;
     }
     .contact-container p{
-        font-size: 5vw;
-        margin-bottom: 50px;
+        
+        font-size: 10vw;
+        margin-top: 200px;
     }
     .contact-container a{
-        font-size: 6vw;
+        font-size: 10vw;
+        
     }
   
     .footer-content {
@@ -292,13 +204,20 @@ body{
     .footer-photo {
         display: none;
     }
+.project1{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 სვეტი, თითო თითოეული სვეტი 50% */
+    
+    max-width: 100%;
+   
+}
+
+
   }
+
 
   .nav-list a.active {
     color:  #FE5C2B;; /* ფერის შეცვლა, მაგალითად, წითელი */
    
     
   }
-
-
-  
