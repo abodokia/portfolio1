@@ -1,77 +1,85 @@
 
 @font-face {
-    font-family: 'mansalva';
-    src: url(Fonts/Mansalva-Regular.ttf);
-  }
-body{
-    margin: 0;
-    padding: 0;
+  font-family: 'mansalva';
+  src: url(Fonts/Mansalva-Regular.ttf);
+}
+@font-face {
+font-family: 'bn melody bold';
+src: url(Fonts/BLMelody-Bold.otf);
+}
+@font-face {
+font-family: 'bn melody light';
+src: url(Fonts/BLMelody-Light.otf);
+}
+@font-face {
+font-family: 'bn melody book';
+src: url(Fonts/BLMelody-Book.otf);
 }
 
-/* nav */
+
+
+
+
+/* ნავბარი*/
+/* ნავიგაციის სტილი */
 
 .navbar {
  
-    top: 0;
-    left: 0;
-    width: 100%;
+top: 0;
+left: 0;
+width: 100%;
+
+
+z-index: 9999; /* ძალიან მაღალი მნიშვნელობა */
+}
+
+
+.nav-list {
+display: flex;
+position: fixed;
+/* ან შიგნით განლაგება */
+list-style: none;
+padding: 10px 0;
+margin-top: -320px;
+background-color: white;
+}
+
+.nav-list li {
+margin: 0;
+}
+
+.nav-list a {
+
+display: block;
+padding: 10px 20px;
+color: #333;
+text-decoration: none;
+font-size: 22px;
+font-family:Arial, Helvetica, sans-serif;
+transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-list a:hover {
+color: #FE5C2B;
+transform: scale(1.1); /* ოდნავ გადიდება */
+  
+}
+
+/* ნავიგაციის სტილი */
+
+
+/* პატარა ეკრანების მორგება */
+@media (max-width: 768px) {
+.nav-list {
     
-    
-    z-index: 9999; /* ძალიან მაღალი მნიშვნელობა */
-  }
-  
-  
-  .nav-list {
-  display: flex;
-  position: fixed;
-   /* ან შიგნით განლაგება */
-  list-style: none;
-  padding: 10px 0;
-  margin: 0;
-  background-color: white;
-  }
-  
-  .nav-list li {
-  margin: 0;
-  }
-  
-  .nav-list a {
-  
-  display: block;
-  padding: 10px 20px;
-  color: #333;
-  text-decoration: none;
-  font-size: 22px;
-  font-family: Arial, Helvetica, sans-serif;
-  transition: color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .nav-list a:hover {
-  color: #FE5C2B;
-  transform: scale(1.1); /* ოდნავ გადიდება */
-      
-  }
-  
-  
-  /* პატარა ეკრანების მორგება */
-  @media (max-width: 768px) {
-    .nav-list {
-      
-    }
-  
-    .nav-list a {
-      padding: 10px;
-      font-size: 16px;
-    }
-  
-    .content {
-      padding: 70px 10px 10px; /* დამატებითი პადინგი, საჭიროების შემთხვევაში */
-    }
-  }
-  
-  
-      /* */
-  
+    align-items: flex-start;
+}
+
+.nav-list a {
+    padding: 10px;
+    font-size: 16px;
+}
+}
 
 
 
@@ -86,7 +94,7 @@ body{
 .project1 img{
     width: 202%;
     height: auto;
-    margin-top: 50px;
+    margin-top: 0px;
     margin-left: 0;
     margin-right: 0;
     
@@ -95,6 +103,50 @@ body{
 
 
 
+/* text */ 
+.text-container{
+  display: flex;
+  justify-content: space-between; /* სივრცის განაწილება */
+  gap: 0px; /* ელემენტების შორის სივრცე */
+  flex-wrap: wrap; /* ელემენტების გადატანა სხვა ხაზზე */
+  margin-top: 320px;
+}
+
+
+
+
+
+
+
+
+.text-container h1{
+  display: flex;
+  margin-left: calc(8px + 1%);
+  margin-right: 0;
+  margin-top: -10px;
+  font-size: 7vw;
+  font-family: 'bn melody light';
+  
+  
+
+}
+.text-container p{
+  display: flex;
+  margin-left: calc(10px + 1%);
+  margin-top: 180px;
+  font-size: 2vw;
+  margin-right: 400px;
+  font-family: 'bn melody light';
+}
+
+.text-container h2{
+  display: flex;
+  margin-left: calc(8px + 1%);
+  margin-right: 0;
+  font-family: 'mansalva';
+  font-size: 5vw;
+  margin-top: 70px;
+}
 
 
 
