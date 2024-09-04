@@ -149,15 +149,15 @@ body{
     padding: 15px; /* Optional padding for better visibility */
     background-color: white; /* Background color of the element */
     color: #242424; /* Text color */
-    font-size: 1.5rem; /* Font size that scales with viewport width */
+    font-size: 1rem; /* Font size that scales with viewport width */
     font-family: Arial, Helvetica, sans-serif; /* Font family */
-    position: fixed; /* Fixes the element to a specific position */
+    position: sticky; /* Fixes the element to a specific position */
     bottom: 20px; /* Aligns the element to the bottom of the viewport */
     right: 0; /* Aligns the element to the right of the viewport */
     z-index: 9999; /* Ensures the element is above other content */
     /* Optional: border-radius for rounded corners */
     font-weight: 1;
-    margin-right: 2.5%;
+    margin-left: 77%;
    
 }
 .footer-photo {
@@ -171,8 +171,10 @@ body{
   /* მობილური ეკრანებისთვის */
 @media (max-width: 768px) {
     h4{
-        margin-bottom: -2%;
-        font-size:2.5vw;
+      margin-bottom: -2%;
+        font-size:0.9rem;
+        margin-left: 20%;
+  }
     }
    
     
@@ -213,7 +215,7 @@ body{
 }
 
 
-  }
+  
 
 
   .nav-list a.active {
