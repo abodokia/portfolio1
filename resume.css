@@ -239,9 +239,7 @@ transform: scale(1.1); /* ოდნავ გადიდება */
     font-family: 'bn melody light';
   }
     h4{
-        margin-bottom: -2%;
-        font-size:0.9rem;
-        margin-left: 27%;
+      display: none;
     }
     
    

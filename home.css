@@ -172,8 +172,7 @@ body{
   /* მობილური ეკრანებისთვის */
 @media (max-width: 768px) {
     h4{
-        margin-bottom: -2%;
-        font-size:2.5vw;
+      display: none;
     }
    
     
